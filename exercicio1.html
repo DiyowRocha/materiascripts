@@ -7,7 +7,31 @@
     <title>Aula 05 - Atividade Parcial</title>
     <script type="text/javascript">
         let numero1 = prompt('Informe o número 1: ');
-        let numero2 = prompt('Informe o número2 : ');
+        let numero2 = prompt('Informe o número 2 : ');
+
+        numero1 = parseFloat(numero1);  
+        numero2 = parseFloat(numero2);
+
+        if(!isNaN(numero1) && !isNaN(numero2) && numero1 != '' && numero2 != ''){
+            let operacao = prompt('Informe a operação (+, -): ');
+            
+            let resposta = '';
+            
+            switch(operacao){
+                case '+':
+                    resposta = numero1+numero2;
+                    alert(resposta);
+                    break;
+
+                case '-':
+                    resposta = numero1-numero2;
+                    alert(resposta);
+                    break;
+                default:
+                    resposta = 'Não entendi foi nada..';
+                    alert(resposta);
+            }            
+        }
     </script>
 </head>
 <body>
