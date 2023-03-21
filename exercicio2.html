@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06</title>
+    <script type="text/javascript">
+        let numero = prompt('Informe um numero: ');
+
+        if (!isNaN(numero) && numero != ''){
+            numero = parseInt(numero);
+
+            /*while (numero>10){
+                alert('Numero '+numero);
+                numero--;
+            }*/
+
+            /*do {
+                alert('Numero '+numero);
+                numero--;
+            } while (numero>10)*/
+
+            for (var index = 0; index < numero; index++){
+                document.write('Numero '+index+'<hr />  ');
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
